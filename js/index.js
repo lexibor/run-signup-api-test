@@ -14,7 +14,7 @@ $(document).ready(async function() {
     //     .catch( error => console.error(error) ); /* handle errors */
 
 
-    $.get(`https://runsignup.com/Rest/races`).done(async function(json)
+    $.get(`https://runsignup.com/Rest/races?api_key=${keys.run_SignUp}&api_secret=${keys.run_SignUp_secret}&format=json`).done(async function(json)
     {
         console.log("testingggggggg")
         console.log(await json.result);
